@@ -84,6 +84,13 @@
 			<plugin>
 				<groupId>org.graalvm.buildtools</groupId>
 				<artifactId>native-maven-plugin</artifactId>
+				<version>0.10.4</version>
+				<configuration>
+					<mainClass>com.example.pun_prompt.PunPromptApplication</mainClass>
+					<buildArgs>
+						<buildArg>--enable-url-protocols=http,https</buildArg>
+					</buildArgs>
+				</configuration>
 			</plugin>
 
 			<plugin>
