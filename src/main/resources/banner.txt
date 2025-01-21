@@ -24,4 +24,4 @@ Your one-stop app for generating random jokes right here in the terminal!
 ----------------------------------------------------------
 
 [1;31mMade with <3 by Vidyasagar[0m
-[1;32mSource Code: https://github.com/YourUsername/Pun-Prompt[0m
+[1;32mSource Code: https://github.com/VidyasagarYadav499/Pun-Prompt[0m
