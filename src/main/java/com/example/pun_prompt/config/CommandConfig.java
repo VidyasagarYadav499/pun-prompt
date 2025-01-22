@@ -75,4 +75,22 @@ public class CommandConfig {
                 .description("Prints a random joke to the console")
                 .build();
     }
+
+    @Bean
+    public CommandRegistration clearCommand() {
+        return CommandRegistration.builder()
+                .command("clear")
+                .withAlias()
+                .command("clean")
+                .and()
+                .withTarget()
+                .function(commandContext -> {
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
+                    return "";
+                })
+                .and()
+                .description("Clears the terminal screen")
+                .build();
+    }
 }
